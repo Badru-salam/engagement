@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+:root {
+  --bg-color: #222327;
+  --text-color: #fff;
+  --main-color: #e8e409;
+  --navbar-mobile: #3333;
+}
+body {
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+  padding-bottom: 0;
+}
+.hero {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 28px 12%;
+  transition: all 0.5s ease;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo i {
+   color: var(--text-color);
+  font-size: 28px;
+  margin-right: 3px;
+}
+.lvogo span {
+    color: var(--main-color);
+ 
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.navbar {
+  display: flex;
+}
+.navbar a {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 5px 0;
+  margin: 0px 30px;
+  transition: all 0.5s ease;
+}
+.navbar a:hover {
+  color: var(--main-color);
+}
+.navbar a.active {
+  color: var(--main-color);
+}
+.main {
+  display: flex;
+  align-items: center;
+}
+.main a {
+  margin-right: 25px;
+  margin-left: 10px;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+.main a:hover {
+  color: var(--main-color);
+}
+}
+.main a:active {
+  color: var(--main-color);
+}
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user i {
+  color: var(--main-color);
+  font-size: 28px;
+  margin-right: 7px;
+}
+.main a:hover {
+  color: var(--main-color);
+}
+#menu-icon {
+  font-size: 35px;
+  color: var(--text-color);
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  header {
+    padding: 14px 2%;
+    transition: 0.2s;
+  }
+  .navbar a {
+    padding: 5px 0;
+    margin: 0px 20px;
+  }
+}
+
+@media (max-width: 1090px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 270px;
+    height: 15vh;
+    background-color: #c9c612;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+  }
+  .navbar a {
+    display: block;
+    margin: 12px 0;
+    padding: 0px 25px;
+    transition: all 0.5s ease;
+  }
+  .navbar a:hover {
+    color: var(--text-color);
+    transform: translateY(5px);
+  }
+  .navbar a.active {
+    color: var(--text-color);
+  }
+  .navbar.open {
+    right: 2%;
+  }
+  .detail {
+    padding-top: 30%;
+  }
+    .detail p {
+    font-size: 15px;
+    line-height: 2%;
+    }
+  .detail h2 {
+    font-size: 25px;
+    
+  }
+      .detail h1{
+    font-size: 35px;
+    
+  }
+    .detail h1 span{
+    font-size: 40px;
+    
+
+  }
+  .images .shape{
+    width: 300px;
+    height: 35%;
+  }
+  .images .badru{
+    width: 250px;
+    height: 270px;
+
+  }
+ 
+ 
+
+}
+.detail{
+  margin-left: 12%;
+  margin-top: 20%;
+  color: var(--text-color);
+  font-size: 1.5rem;
+}
+.color-acsent {
+  color :var(--main-color)
+}
+#hero {
+
+  color: var(--text-color);
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  transition: all 0.5s ease;
+
+}
+.container {
+  position: fixed;
+  width: 100%;
+  top: auto;
+  right: 0;
+  display: flex;
+  background: transparent;
+  padding: 0px 12%;
+  transition: all 0.5s ease;
+
+}
+.btn-custom1 {
+  background-color: var(--main-color);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  min-width: 150px;
+  height: 45px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+.btn-custom1:hover{
+  color:white;
+  box-shadow: 0 0 12px rgb(255, 255, 255);
+  text-shadow:black;
+}
+.col-9{
+  padding-left: 40%;
+  position: fixed;
+  top: 20%;
+  text-align: center;
+}
+.detail {
+  margin-left: 12%;
+  margin-top: 15%;
+  z-index: 1000;
+
+}
+.detail h1 {
+  font-size: 50px;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+span {
+  color: var(--main-color);
+}
+.detail p {
+  color: var(--text-color);
+  line-height: 22px;
+}
+.images {
+  width: 50%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+
+}
+.images img {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+  transition: botton 1s, left 1s;
+}
+.images:hover .shape {
+  bottom: 40px;
+
+}
+.images:hover .badru {
+  left: 45%;
+  
+}
