@@ -13,6 +13,22 @@
   --main-color: #e8e409;
   --navbar-mobile: #3333;
 }
+html {
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #222;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
 body {
   min-height: 100vh;
   background: var(--bg-color);
@@ -124,7 +140,7 @@ body {
     top: 100%;
     right: -100%;
     width: 270px;
-    height: 15vh;
+    height: 18vh;
     background-color: #c9c612;
     display: flex;
     flex-direction: column;
